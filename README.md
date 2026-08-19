@@ -14,6 +14,12 @@ This public snapshot is intentionally limited to the original 20-task explorator
 
 The gripper-command event definition used in the archived analysis begins a close window when the mean gripper command in an action chunk is at least 0.6 and ends it at the first subsequent chunk whose mean gripper command is at most 0.1.
 
+The rank statement is descriptive rather than an enrichment test. A post-hoc
+scan of the retained raw archive found N9926 rank 1 in 1,310 of all 1,311
+chunks, so the phase-associated observation concerns its increase in magnitude
+around action-defined close windows, not its identity or rank alone. The
+additive audit and its limitations are recorded in `audit/README.md`.
+
 ## What is not included
 
 This repository does **not** contain work produced after the accepted exploratory poster. Those later results are outside this public snapshot and remain separately archived.
@@ -28,10 +34,18 @@ The intended public snapshot contains:
 - `data/all_detected_events.csv`: detected gripper-command events;
 - `data/all_l17_bursts.csv`: deduplicated L17 burst candidates;
 - `reports/pick_put_l17_summary.md` and `reports/outcome_l17_summary.md`: archived derived summaries;
+- `audit/`: additive post-hoc clarification of the N9926 baseline, event-window
+  censoring, Figure 1 timing anchors, and Task 15 outcome semantics;
+- `data/right_censored_event_adjudication.csv`: the seven close-associated
+  windows retained at the episode boundary without an observed release;
 - `figures/task01_l17_task_phase_overview.png` through `figures/task20_l17_task_phase_overview.png`: historical per-task A7/L17 phase-overview figures, including the representative Task02 figure used in the poster;
 - `videos/taskXX_<BenchmarkTask>/main.mp4` and `viewport.mp4`: two views of each of the same 20 historical task executions.
 
 See `PROVENANCE.md` for the evidence boundary and archival limitations.
+
+The additive audit does not overwrite the historical CSVs, script, figures, or
+videos and must not be read as evidence that was available in the frozen poster
+analysis. Later project work remains outside this snapshot.
 
 ## Interpretation boundary
 
