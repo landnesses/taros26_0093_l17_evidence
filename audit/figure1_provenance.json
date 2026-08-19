@@ -11,6 +11,34 @@
     "dpi_metadata": [450.0118, 450.0118],
     "decoded_rgba_pixel_sha256": "da9b7f00301be54f1e0c6b22cabb13fba38e41e80a0b7e739f337260ecf11a7a"
   },
+  "pre_specialization_batch_figure": {
+    "path": "audit/figures/task02_l17_task_phase_overview_pre_specialization.png",
+    "role": "standard four-row Task 02 batch overview before the specialized paper export",
+    "recovered_from_ref": "refs/codex/turn-diffs/1781212692378/f59e2f69-ef13-4f46-93fc-919e5d17d5bf/base",
+    "snapshot_tree_sha1": "b4dc4bddce3f4679ee52a21bd60a1deaf6181c5e",
+    "git_blob_sha1": "674c18fa7c7358dfde0acd5d292c616211c2d91a",
+    "captured_by_tree_snapshot_at": "2026-06-11T22:18:12+01:00",
+    "sha256": "2e8fa855c4a2ce2331dbb50bf36f62d45d46b9d5db5a5c0c8133a8bc8eb9d0db",
+    "bytes": 261686,
+    "pixel_dimensions": [2520, 1800],
+    "mode": "RGBA",
+    "software_metadata": "Matplotlib version3.10.9, https://matplotlib.org/",
+    "dpi_metadata": [180.0098, 180.0098],
+    "decoded_rgba_pixel_sha256": "ef24171d966633594874a300a5916e0a72fb2a075aaa919b444fcf11042b4b3b",
+    "recovery_method": "byte-exact extraction of the retained Git blob; not a modern rerun",
+    "annotation_difference": "This standard figure has formal close/burst at chunk 7 and release at chunk 10, with no 0.5 grasp-onset marker.",
+    "byte_identical_reproduction": {
+      "verified": true,
+      "historical_script_sha256": "d78538376c84e3fe7c07989c78d1d4bdfdc5da2cd151c160f1bc9234cc6afb8e",
+      "input_request_number_range_inclusive": [40, 49],
+      "runtime": "retained openpi uv environment",
+      "matplotlib_version": "3.10.9",
+      "detected_event_count": 1,
+      "retained_burst_candidate_count": 5,
+      "output_sha256": "2e8fa855c4a2ce2331dbb50bf36f62d45d46b9d5db5a5c0c8133a8bc8eb9d0db",
+      "byte_identical_with_recovered_blob": true
+    }
+  },
   "retained_archival_source": {
     "archive_relative_path": "experiments/2026-06/ffn-runtime-analysis/_raw/analysis_outputs/ffn_runtime_analysis/l17_pick_put_pack/task_02_put_the_cube_in_the_bowl/l17_task_phase_overview.png",
     "specialized_companion_basename": "l17_task_phase_overview_singlecol_2row.png",

@@ -83,6 +83,23 @@ pixel-identical to the public PNG. The standard archived analysis script makes
 a four-row overview and does not reproduce this specialized two-row layout;
 the one-off plotting source was not recovered.
 
+The overwritten pre-specialization four-row Task 02 output was recovered from
+a Codex turn-diff base-tree snapshot captured on 2026-06-11. It is retained as
+`figures/task02_l17_task_phase_overview_pre_specialization.png` within this
+audit directory. The recovered file is the original Git blob
+`674c18fa7c7358dfde0acd5d292c616211c2d91a`, not a modern rerun. Its SHA-256 is
+`2e8fa855c4a2ce2331dbb50bf36f62d45d46b9d5db5a5c0c8133a8bc8eb9d0db`.
+A targeted rerun using the historical script, retained raw Task 02 requests
+40-49, the openpi `uv` environment, and Matplotlib 3.10.9 reproduced that PNG
+byte-for-byte with the same SHA-256.
+
+The recovered four-row figure and the paper-specialized two-row figure plot the
+same Task 02 action and activation values. The standard figure marks formal
+close/burst at chunk 7 and release at chunk 10 and has no 0.5 onset marker. The
+specialized figure adds the executor-interpreted closure-command onset at chunk
+6 while retaining formal close/burst at chunk 7. This is a visualization-layer
+difference, not a change in the archived event table or underlying trace.
+
 No contemporaneous written rationale for selecting Task 02 was recovered.
 Retrospectively, it was the shortest of the 20 executions (10 chunks), was
 successful, contained one complete event, aligned formal close and L17/N9926
@@ -109,6 +126,8 @@ be used without a sensitivity analysis.
 - `posthoc_historical_l17_audit.json`: machine-readable results and input hashes;
 - `figure1_provenance.json`: Figure 1 image lineage, upstream 0.5 executor
   semantics, Task 02 anchors, and selection limitations;
+- `figures/task02_l17_task_phase_overview_pre_specialization.png`: recovered
+  pre-specialization four-row Task 02 Git blob;
 - `task15_outcome_semantics.json`: Task 15 evaluator reconciliation and retained
   private-source hashes;
 - `../analysis/posthoc_audit_historical_l17.py`: audit implementation;

@@ -92,6 +92,26 @@ The public PNG is byte-identical to the retained specialized archival output
 created on 2026-06-24 and is pixel-identical to the image embedded in the final
 paper. Its SHA-256 is
 `b42c1102b5fbc833e8ebae30b415c545c2e92bfc78a593892a42700737091ac1`.
+
+The pre-specialization standard four-row Task 02 overview was also recovered
+from the earlier Git tree snapshot
+`refs/codex/turn-diffs/1781212692378/f59e2f69-ef13-4f46-93fc-919e5d17d5bf/base`,
+captured on 2026-06-11. Its Git blob is
+`674c18fa7c7358dfde0acd5d292c616211c2d91a`, and its file SHA-256 is
+`2e8fa855c4a2ce2331dbb50bf36f62d45d46b9d5db5a5c0c8133a8bc8eb9d0db`.
+It is published at
+`audit/figures/task02_l17_task_phase_overview_pre_specialization.png`. The
+standard figure contains the same 10-chunk trace and marks formal close/burst
+at chunk 7 and release at chunk 10; it contains no 0.5 `grasp onset` marker.
+The side-by-side comparison in `README.md` therefore isolates the later
+visualization annotation from the unchanged underlying data.
+
+A targeted rerun of the historical analysis script in the retained openpi
+environment (Matplotlib 3.10.9), using the original Task 02 requests 40-49,
+reproduced the recovered four-row PNG byte-for-byte with the same SHA-256. This
+confirms that the recovered blob is the standard historical script output, not
+a visually similar reconstruction.
+
 The exact one-off plotting source and a contemporaneous written rationale for
 selecting Task 02 were not recovered. Retrospectively, Task 02 is the shortest
 execution (10 chunks), is successful, has one complete event, aligns the formal
