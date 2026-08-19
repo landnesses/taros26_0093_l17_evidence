@@ -14,6 +14,13 @@ This public snapshot is intentionally limited to the original 20-task explorator
 
 The gripper-command event definition used in the archived analysis begins a close window when the mean gripper command in an action chunk is at least 0.6 and ends it at the first subsequent chunk whose mean gripper command is at most 0.1.
 
+Figure 1 uses `grasp onset` as operational shorthand for the onset of
+executor-interpreted closure commands at the upstream per-action boundary
+`A7 > 0.5`. It is not the formal chunk-mean close-event boundary, and it does
+not assert observed physical contact, acquisition, or a stable grasp. Exact
+image provenance and timing anchors are recorded in
+`audit/figure1_provenance.json`.
+
 The rank statement is descriptive rather than an enrichment test. A post-hoc
 scan of the retained raw archive found N9926 rank 1 in 1,310 of all 1,311
 chunks, so the phase-associated observation concerns its increase in magnitude
@@ -35,7 +42,8 @@ The intended public snapshot contains:
 - `data/all_l17_bursts.csv`: deduplicated L17 burst candidates;
 - `reports/pick_put_l17_summary.md` and `reports/outcome_l17_summary.md`: archived derived summaries;
 - `audit/`: additive post-hoc clarification of the N9926 baseline, event-window
-  censoring, Figure 1 timing anchors, and Task 15 outcome semantics;
+  censoring, Figure 1 provenance and timing anchors, and Task 15 outcome
+  semantics;
 - `data/right_censored_event_adjudication.csv`: the seven close-associated
   windows retained at the episode boundary without an observed release;
 - `figures/task01_l17_task_phase_overview.png` through `figures/task20_l17_task_phase_overview.png`: historical per-task A7/L17 phase-overview figures, including the representative Task02 figure used in the poster;

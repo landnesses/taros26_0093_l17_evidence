@@ -1,0 +1,93 @@
+{
+  "audit_kind": "post_submission_figure_provenance_clarification",
+  "verified_at": "2026-08-19",
+  "public_figure": {
+    "path": "figures/task02_l17_task_phase_overview.png",
+    "sha256": "b42c1102b5fbc833e8ebae30b415c545c2e92bfc78a593892a42700737091ac1",
+    "bytes": 152760,
+    "pixel_dimensions": [1507, 1057],
+    "mode": "RGBA",
+    "software_metadata": "Matplotlib version3.10.9, https://matplotlib.org/",
+    "dpi_metadata": [450.0118, 450.0118],
+    "decoded_rgba_pixel_sha256": "da9b7f00301be54f1e0c6b22cabb13fba38e41e80a0b7e739f337260ecf11a7a"
+  },
+  "retained_archival_source": {
+    "archive_relative_path": "experiments/2026-06/ffn-runtime-analysis/_raw/analysis_outputs/ffn_runtime_analysis/l17_pick_put_pack/task_02_put_the_cube_in_the_bowl/l17_task_phase_overview.png",
+    "specialized_companion_basename": "l17_task_phase_overview_singlecol_2row.png",
+    "modified_at": "2026-06-24T19:52:36.864922093+01:00",
+    "companion_modified_at": "2026-06-24T19:52:36.924921986+01:00",
+    "sha256": "b42c1102b5fbc833e8ebae30b415c545c2e92bfc78a593892a42700737091ac1",
+    "byte_identical_with_public_figure": true
+  },
+  "final_paper_embedding": {
+    "paper_sha256": "917f9d4a4ea19ee612654af5836f3e718392326a374e3bad8fb9f386a4731f85",
+    "page": 1,
+    "pdf_image_object_id": 19,
+    "pixel_dimensions": [1507, 1057],
+    "decoded_rgba_pixel_sha256": "da9b7f00301be54f1e0c6b22cabb13fba38e41e80a0b7e739f337260ecf11a7a",
+    "comparison_basis": "RGB image plus embedded soft mask decoded to RGBA",
+    "pixel_identical_with_public_figure": true
+  },
+  "upstream_executor_semantics": {
+    "recorded_task_action_class": "robolab.robots.droid:BinaryJointPositionZeroToOneAction",
+    "source_file": "robolab/robots/droid.py",
+    "source_commit": "28b9313b26ddd6e5dc14b4926213352b08ca0139",
+    "source_commit_authored_at": "2026-04-10T11:52:12-07:00",
+    "source_commit_subject": "Initial release of RoboLab v0.1.0",
+    "rule": "binary_mask = actions > 0.5",
+    "application_unit": "individual action timestep",
+    "figure_interpretation": "The grey grasp-onset marker is an illustrative chunk-level anchor for the onset of executor-interpreted closure commands, not the formal event detector."
+  },
+  "task02_anchors": {
+    "benchmark_task_name": "RubiksCubeTask",
+    "prompt": "Put the cube in the bowl",
+    "chunk_count": 10,
+    "outcome_label": "success",
+    "score_total": 1.0,
+    "chunk_6": {
+      "figure_annotation": "grasp onset",
+      "mean_a7": 0.5120747057583689,
+      "actions_above_0_5": 14,
+      "actions_in_chunk": 15,
+      "formal_close_event": false
+    },
+    "chunk_7": {
+      "mean_a7": 0.6924222175297738,
+      "formal_close_event": true,
+      "formal_close_threshold": 0.6,
+      "l17_p99": 4320.0,
+      "n9926_max_positive": 252928.0,
+      "marked_l17_n9926_burst": true
+    },
+    "chunk_10": {
+      "mean_a7": 0.05393640529212356,
+      "formal_release_event": true,
+      "formal_release_threshold": 0.1
+    }
+  },
+  "selection_and_generation_boundary": {
+    "contemporaneous_task_selection_rationale_recovered": false,
+    "one_off_specialized_plotting_source_recovered": false,
+    "standard_historical_script_layout": "four-row task overview",
+    "specialized_figure_layout": "two-row single-column overview",
+    "retrospective_descriptors": [
+      "shortest of the 20 executions",
+      "successful execution",
+      "one complete formal event",
+      "formal close and L17/N9926 peak aligned at chunk 7",
+      "observed formal release at chunk 10"
+    ],
+    "not_claimed": [
+      "prespecified example selection",
+      "random example selection",
+      "independent validation sample",
+      "representative sampling of the 20 tasks"
+    ]
+  },
+  "interpretation_boundary": [
+    "The figure annotation does not establish physical contact.",
+    "The figure annotation does not establish object acquisition or a stable grasp.",
+    "The 0.5 executor boundary is distinct from the 0.6 chunk-mean formal event detector.",
+    "The figure is an illustrative same-execution view and is not an independent validation population."
+  ]
+}

@@ -75,8 +75,30 @@ window at chunk 7, where mean A7 is 0.6924. Chunk 7 is also the marked L17/N9926
 burst. Chunk 10 has mean A7 0.0539 and is the formal release endpoint.
 
 The annotation and event table therefore use different timing anchors over the
-same action trace. The figure is illustrative; the historical detector and CSV
-are authoritative for event counts and window statistics.
+same action trace. In particular, `grasp onset` is operational shorthand for
+the onset of executor-interpreted closure commands. It is not the formal
+`close event`, and it does not assert observed contact, acquisition, or a stable
+physical grasp. The historical detector and CSV are authoritative for event
+counts and window statistics.
+
+The upstream Task 02 configuration used
+`robolab.robots.droid:BinaryJointPositionZeroToOneAction`. RoboLab v0.1.0 commit
+`28b9313b26ddd6e5dc14b4926213352b08ca0139` implements the per-action rule
+`binary_mask = actions > 0.5`. The figure applies that executor boundary as an
+illustrative chunk-level timing anchor; the historical event detector instead
+uses the declared chunk-mean threshold of 0.6.
+
+The public PNG is byte-identical to the retained specialized archival output
+created on 2026-06-24 and is pixel-identical to the image embedded in the final
+paper. Its SHA-256 is
+`b42c1102b5fbc833e8ebae30b415c545c2e92bfc78a593892a42700737091ac1`.
+The exact one-off plotting source and a contemporaneous written rationale for
+selecting Task 02 were not recovered. Retrospectively, Task 02 is the shortest
+execution (10 chunks), is successful, has one complete event, aligns the formal
+close and L17/N9926 peak at chunk 7, and has an observed release at chunk 10.
+These properties explain its suitability as a compact illustration; they do
+not establish prespecified or representative sampling. See
+`audit/figure1_provenance.json`.
 
 The 20 published phase-overview PNG files are the archived A7/L17 figures for those same task indices. They are descriptive same-execution views and do not add an independent validation population.
 
