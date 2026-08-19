@@ -1,0 +1,34 @@
+{
+  "schema": "taros26_0093.task15_outcome_semantics.v1",
+  "status": "upstream_robolab_evaluator_disagreement_not_author_relabeling",
+  "task_index": 15,
+  "benchmark_task_name": "CookingClearPlateTask",
+  "instruction": "Put the two measuring cups outside of the plate",
+  "binary_task_result": {
+    "value": true,
+    "criterion": "object_outside_of(objects=[spoon_1, measuring_cups_1], container=clay_plates, logical=all, require_gripper_detached=true)",
+    "source": "RoboLab termination manager"
+  },
+  "recording_side_progress_score": {
+    "value": 0.5,
+    "criterion": "Per-object pick-and-place-on-table subtask progress; only spoon_1 completed its object_on_top(table, detached) sequence at the final step.",
+    "source": "RoboLab subtask/event scorer"
+  },
+  "historical_public_join": {
+    "success": 1,
+    "score_total": 1.0,
+    "outcome_label": "success",
+    "source": "Historical task_summary_with_outcomes.csv",
+    "exact_scalar_join_generator_recovered": false
+  },
+  "interpretation": [
+    "There is no binary success-label conflict: both the recording and public join mark the episode successful.",
+    "The scalar 0.5 versus 1.0 difference comes from distinct upstream outcome/progress semantics and is not an author adjudication.",
+    "The historical joined CSV is preserved unchanged. Analyses using a scalar score must report a sensitivity analysis or exclude Task 15 from scalar-score claims."
+  ],
+  "retained_private_source_sha256": {
+    "episode_results_jsonl": "de89bbf3e7f822eb9c314089fa275739cf94d981f39519721fc854d0fff151192",
+    "task15_log_0_env0_json": "9a6bcfde8ca3b305827156e6a0a8856a60c67237139c4dee5025879d95e5f9bd",
+    "task15_env_cfg_json": "129f398be4e3f8aed232e87a7ae3a4080dbfb69bdd5bcc7e0bd43e919e5c8214"
+  }
+}

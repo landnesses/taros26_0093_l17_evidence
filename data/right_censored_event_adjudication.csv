@@ -1,0 +1,8 @@
+task_index,event,close_chunk,archived_end_chunk,archived_end_mean_a7,release_threshold_observed,author_adjudication,task_success_implication,note
+3,1,5,12,0.8116188547846735,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."
+9,2,13,16,0.4040626923912585,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."
+11,2,10,13,0.26662014924690125,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."
+12,14,179,180,0.9124875964122177,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."
+15,4,56,74,0.9056787196448565,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."
+19,4,34,39,0.9677355296146632,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."
+20,2,14,28,0.815330207921684,0,retain_as_closure_associated_event,none,"Episode boundary stored as the historical window end; no A7<=0.1 release was observed."

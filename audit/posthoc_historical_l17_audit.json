@@ -1,0 +1,200 @@
+{
+  "schema": "taros26_0093.historical_l17_posthoc_audit.v1",
+  "created_utc": "2026-08-19T21:06:56.740170+00:00",
+  "status": "post_hoc_additive_audit_not_manuscript_evidence",
+  "inputs": {
+    "request_archive_publicly_distributed": false,
+    "request_count": 1311,
+    "task_rollout_count": 20,
+    "events_csv_sha256": "ca8112fd8bfbc46bc4c3ecc7f46f01bdc6aa285e752e723b5520f3028162d1a6",
+    "bursts_csv_sha256": "7f7259173ca7825860cddb7bee64748904de9db343110b8db2db5d203a90cffa",
+    "first_request_directory": "request_000001_1781043947086608773",
+    "last_request_directory": "request_001311_1781054398008556477"
+  },
+  "n9926_rank_baseline": {
+    "rank1_all_chunks": 1310,
+    "all_chunks": 1311,
+    "rank1_candidate_chunks": 137,
+    "candidate_chunks": 137,
+    "interpretation": "Rank-1 occurrence in retained candidates is not an enrichment result because N9926 is rank 1 in nearly every archived chunk."
+  },
+  "absolute_layer_scale_descriptor": {
+    "median_l17_top1": 82432.0,
+    "largest_non_l17_layer_median_top1": 432.0,
+    "median_per_chunk_l17_to_strongest_non_l17_top1_ratio": 172.4978540772532,
+    "warning": "Raw activation scales are layer dependent; this is a descriptive amplitude discontinuity, not a calibrated cross-layer effect size."
+  },
+  "action_window_independent_of_activation": {
+    "all_archived_windows": {
+      "n_task_rollouts": 20,
+      "task_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "positive_task_log_effects": 15,
+      "mean_task_log1p_difference": 0.23390050013905164,
+      "bootstrap_ci95_task_log1p_difference": [
+        0.12672047188317032,
+        0.3455849765594027
+      ],
+      "exact_two_sided_task_sign_flip_p": 0.00043487548828125,
+      "median_task_raw_mean_ratio": 1.2248204964270304
+    },
+    "complete_release_observed_windows_only": {
+      "n_task_rollouts": 19,
+      "task_indices": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "positive_task_log_effects": 13,
+      "mean_task_log1p_difference": 0.19583194272986928,
+      "bootstrap_ci95_task_log1p_difference": [
+        0.09566743414831606,
+        0.3005542237347309
+      ],
+      "exact_two_sided_task_sign_flip_p": 0.0015716552734375,
+      "median_task_raw_mean_ratio": 1.2134172936430052
+    },
+    "all_windows_taskwise_circular_shift_p": 0.00023999520009599807,
+    "shift_null": "Two-sided task-balanced circular shifts preserve each task's N9926 series, event-mask coverage, and spacing while randomizing phase."
+  },
+  "selection_conditioned_descriptor": {
+    "warning": "Candidate chunks were selected partly from L17 statistics; this contrast is descriptive and must not be used as confirmatory evidence.",
+    "candidate_vs_other": {
+      "n_task_rollouts": 20,
+      "task_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "positive_task_log_effects": 20,
+      "mean_task_log1p_difference": 0.9158460780387159,
+      "bootstrap_ci95_task_log1p_difference": [
+        0.8224469997169614,
+        1.007732304874185
+      ],
+      "exact_two_sided_task_sign_flip_p": 1.9073486328125e-06,
+      "median_task_raw_mean_ratio": 2.55099873758125
+    }
+  },
+  "right_censoring": {
+    "complete_threshold_defined_events": 92,
+    "episode_boundary_censored_events": 7,
+    "rows": [
+      {
+        "task_index": 3,
+        "event": 1,
+        "close_chunk": 5,
+        "archived_end_chunk": 12,
+        "archived_end_mean_a7": 0.8116188547846735
+      },
+      {
+        "task_index": 9,
+        "event": 2,
+        "close_chunk": 13,
+        "archived_end_chunk": 16,
+        "archived_end_mean_a7": 0.4040626923912585
+      },
+      {
+        "task_index": 11,
+        "event": 2,
+        "close_chunk": 10,
+        "archived_end_chunk": 13,
+        "archived_end_mean_a7": 0.26662014924690125
+      },
+      {
+        "task_index": 12,
+        "event": 14,
+        "close_chunk": 179,
+        "archived_end_chunk": 180,
+        "archived_end_mean_a7": 0.9124875964122177
+      },
+      {
+        "task_index": 15,
+        "event": 4,
+        "close_chunk": 56,
+        "archived_end_chunk": 74,
+        "archived_end_mean_a7": 0.9056787196448565
+      },
+      {
+        "task_index": 19,
+        "event": 4,
+        "close_chunk": 34,
+        "archived_end_chunk": 39,
+        "archived_end_mean_a7": 0.9677355296146632
+      },
+      {
+        "task_index": 20,
+        "event": 2,
+        "close_chunk": 14,
+        "archived_end_chunk": 28,
+        "archived_end_mean_a7": 0.815330207921684
+      }
+    ],
+    "interpretation": "The historical release_chunk field stores the observation boundary for these rows. It is not an observed A7<=0.1 release."
+  },
+  "p99_n9926_sensitivity": {
+    "pearson_r_n9926_vs_p99": 0.923656269117545,
+    "mean_relative_absolute_p99_change_after_removal": 0.003300204016594021,
+    "interpretation": "N9926 co-varies with the L17 upper tail but one neuron has little numerical influence on a 99th percentile over 16,384 neurons."
+  },
+  "inference_limits": [
+    "post-hoc analysis of one rollout per task",
+    "action-command timing, not physical contact or acquisition labels",
+    "no causal intervention",
+    "no task-success prediction claim",
+    "candidate-conditioned contrasts are selection biased"
+  ]
+}
