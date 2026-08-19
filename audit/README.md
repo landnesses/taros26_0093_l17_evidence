@@ -5,6 +5,9 @@ This directory adds provenance and sensitivity checks to the frozen historical
 historical CSV files, the historical analysis script, figures, or videos. The
 manuscript-scale analysis was formed on 2026-06-24; this audit was added after
 submission and must not be read as evidence that was available in the paper.
+The audit records evidence lineage and sensitivity only; it makes no statement
+about the status or content of work outside the frozen snapshot. Repository-wide
+interpretation limits are in `../SCOPE_AND_LIMITATIONS.md`.
 
 ## N9926: baseline rank versus phase modulation
 

@@ -2,6 +2,19 @@
 
 This repository contains the public evidence snapshot for the exploratory L17 activation findings reported in TAROS 2026 submission 93, **“Investigating Internal Phase Signals in VLA-Based Pick-Up Manipulation for Cross-Robot Adaptation.”**
 
+> [!IMPORTANT]
+> This is a frozen, manuscript-stage **exploratory evidence snapshot**, not a
+> live or comprehensive project record. It documents the defined 20-execution
+> historical analysis and its additive provenance audit. It makes no statement
+> about the existence, status, direction, or results of work outside this
+> boundary, and no such inference should be drawn from its silence.
+
+> [!CAUTION]
+> The 1,311 chunks, 99 action-command windows, and 137 retained candidates are
+> nested or selected observations within **20 task executions**. They are not
+> 1,311, 99, or 137 independent experimental replications. Read
+> `SCOPE_AND_LIMITATIONS.md` before using the artifacts or counts.
+
 ## Figure 1 provenance at a glance
 
 Both panels below use the same Task 02 execution and the same 10 policy chunks.
@@ -43,15 +56,22 @@ chunks, so the phase-associated observation concerns its increase in magnitude
 around action-defined close windows, not its identity or rank alone. The
 additive audit and its limitations are recorded in `audit/README.md`.
 
-## What is not included
+## Defined snapshot boundary
 
-This repository does **not** contain work produced after the accepted exploratory poster. Those later results are outside this public snapshot and remain separately archived.
+This repository is not a rolling project log. It intentionally documents only
+the frozen historical analysis unit and the audit artifacts identified here.
+The repository is deliberately silent about anything outside that unit;
+absence from this snapshot must not be treated as evidence that other work does
+or does not exist.
 
 ## Public evidence files
 
 The intended public snapshot contains:
 
 - `analysis/analyze_l17_prompt_tasks.py`: historical analysis script;
+- `SCOPE_AND_LIMITATIONS.md`: authoritative reading boundary for sample units,
+  selection, event semantics, outcomes, figures, reproducibility, and excluded
+  inferences;
 - `data/task_summary.csv`: per-task chunk/event/burst summary;
 - `data/task_summary_with_outcomes.csv`: task-level benchmark outcomes joined to the exploratory summary;
 - `data/all_detected_events.csv`: detected gripper-command events;
@@ -69,7 +89,7 @@ See `PROVENANCE.md` for the evidence boundary and archival limitations.
 
 The additive audit does not overwrite the historical CSVs, script, figures, or
 videos and must not be read as evidence that was available in the frozen poster
-analysis. Later project work remains outside this snapshot.
+analysis. The snapshot makes no claim about work outside its stated boundary.
 
 ## Interpretation boundary
 
