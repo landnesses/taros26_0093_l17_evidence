@@ -2,6 +2,11 @@
 
 This repository is a deliberately narrow public snapshot of the **historical 20-task exploratory L17 analysis** associated with TAROS 2026 submission 93.
 
+This is a frozen manuscript-stage evidence artifact, not a live project record.
+`SCOPE_AND_LIMITATIONS.md` is the authoritative interpretation boundary. The
+repository makes no statement about the existence, status, direction, or
+results of work outside the documented snapshot.
+
 ## Historical analysis unit
 
 The archived exploratory run was split into 20 consecutive prompt-defined task executions comprising 1,311 policy requests/chunks in total. The historical analysis detected 99 gripper-command events and produced 137 deduplicated L17 burst candidates.
@@ -103,7 +108,7 @@ It is published at
 `audit/figures/task02_l17_task_phase_overview_pre_specialization.png`. The
 standard figure contains the same 10-chunk trace and marks formal close/burst
 at chunk 7 and release at chunk 10; it contains no 0.5 `grasp onset` marker.
-The side-by-side comparison in `README.md` therefore isolates the later
+The side-by-side comparison in `README.md` therefore isolates the specialized
 visualization annotation from the unchanged underlying data.
 
 A targeted rerun of the historical analysis script in the retained openpi
@@ -126,7 +131,8 @@ The 20 published phase-overview PNG files are the archived A7/L17 figures for th
 
 L17 was selected during preliminary exploratory screening because it exhibited conspicuous sparse, high-amplitude responses near gripper-command windows. However, the historical public archive retained the L17-focused readouts used for the accepted poster, not a complete reproducible archive of the earlier L0-L16 screening process. Accordingly, this repository **does not claim that L17 is unique or statistically superior to every other layer**.
 
-Subsequent project work post-dates the accepted exploratory poster and is intentionally outside this public snapshot.
+No inference about work outside this snapshot follows from the limited public
+archive or from the absence of other layer analyses here.
 
 ## Raw-data boundary
 
@@ -134,4 +140,8 @@ The original request archives are retained separately and are not published here
 
 ## Scope exclusions
 
-This repository intentionally excludes all work produced after the accepted exploratory poster. That exclusion is a scope boundary, not a claim about whether subsequent analyses exist.
+This repository intentionally excludes every analysis, dataset, system, and
+claim not expressly identified as part of the frozen historical snapshot or
+its additive provenance audit. This exclusion is evidentiary and
+chronology-neutral: it neither confirms nor denies work outside the snapshot.
+See `SCOPE_AND_LIMITATIONS.md` for the complete list of unsupported inferences.
